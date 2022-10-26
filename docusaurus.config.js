@@ -4,11 +4,13 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: 'Power DIY Recipes',
+
+async function createConfig() {
+  const mdxMermaid = await import('mdx-mermaid')
+  return {
+  title: 'Power Recipes',
   staticDirectories: [ 'static'],
-  tagline: 'This site is devoted to supporting you in developing Power Apps your self',
+  tagline: 'Learn what you can do your self without paying for additional licenses',
   url: 'https://recipes.jumpto365.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -31,9 +33,11 @@ const config = {
   presets: [
     [
       'classic',
+      
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          remarkPlugins: [mdxMermaid.default],
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -57,8 +61,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      
       navbar: {
-        title: 'Power Recipes by jumpto365',
+        title: 'Power Recipes (Preview)',
         logo: {
           alt: 'My Site Logo',
           src: 'img/50x50.png',
@@ -93,6 +98,14 @@ const config = {
                 label: 'Kitchen',
                 to: '/docs/kitchen',
               },
+              {
+                label: 'Chefs tips',
+                to: '/docs/category/governance',
+              },
+              // {
+              //   label: 'Hexatown',
+              //   to: '/docs/category/hexatown',
+              // },
             ],
           },
           
@@ -127,13 +140,14 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} jumpto365, Inc. `,
+        copyright: `Power Recipes by jumpto365 &trade;.  Copyright © ${new Date().getFullYear()} jumpto365, Inc. `,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['powershell'],
       },
     }),
-};
+}}
 
-module.exports = config;
+module.exports =createConfig // config;

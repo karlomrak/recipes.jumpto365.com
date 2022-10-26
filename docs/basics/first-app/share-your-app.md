@@ -1,13 +1,15 @@
 ---
 sidebar_position: 5
 ---
-
 # Preview & Share your app
+:::note
+This page is currently under construction
+:::
 
 ## Preview
 
 ## Share
 
-App sharing can be made in 2 way, app access which is the default, and shared ownership.
+App sharing can be made in two ways: 1) app access (which is the default), and 2) shared ownership.
 
-Notice that you also need to ensure that any data sources used in your app also have been shared with your app's users.
+Note: you must ensure that any data sources used in your App are shared with your app's users.

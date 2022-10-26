@@ -1,10 +1,11 @@
 ---
 sidebar_position: 4
+tags: [Review]
 ---
 
 # Show list content
 
-At this stage you have a fresh Power App to work in a connected data source. But nothing has been visualized yet.
+At this stage, you now have a fresh Power App that works with a connected data source - but nothing has been visualized yet.
 
 ## Open the Insert panel
 
@@ -12,11 +13,8 @@ At this stage you have a fresh Power App to work in a connected data source. But
 
 
 :::info
-You can also click the Insert button ![](2022-09-25-17-25-33.png) to uncover the options of components
-
+You can also click the Insert button ![](2022-09-25-17-25-33.png) to uncover the various component options.
 :::
-
-
 
 ## Insert a "Vertical gallery"
 
@@ -29,4 +27,3 @@ Select **Demo** ![](2022-09-25-18-01-24.png)
 
 ![](2022-09-25-18-03-34.png)
 
-Test

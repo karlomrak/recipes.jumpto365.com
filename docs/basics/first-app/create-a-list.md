@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+tags: [Review]
 ---
 
 # Create a List
@@ -9,6 +10,10 @@ A list is like a worksheet in a spreadsheet, a place to store structured informa
 ## Add a Tab in Teams
 
 In this case I will work under the assumption that you uses Microsoft Teams, and that you are the owner of one. Navigate to the channel where you like to add a List. 
+
+:::info
+You can add a list in any channel on any Team. In this case I have named the Team with the same name as the App. That is not a requirement.
+:::
 
 ![](2022-09-22-14-16-51.png)
 
@@ -39,7 +44,7 @@ Select **Blank list**
 Name the list **Demo** 
 
 :::tip Pro tip
-We have a Pro tip for you on the concept of naming conventions. See [Use PascalCasing](../../pro-tips/name-using-pascal-casing)
+We have a Pro tip for you on the concept of naming conventions. See [Use PascalCasing](/docs/pro-tips/governance/policies/naming-convention/name-using-pascal-casing)
 :::
 
 ![](2022-09-22-14-47-08.png)
